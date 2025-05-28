@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://storage.googleapis.com/download.flutter.io' }
+    }
+    plugins {
+        id 'com.android.application' version '8.1.2'
+        id 'org.jetbrains.kotlin.android' version '1.8.20'
+        id 'dev.flutter.flutter-gradle-plugin' version '4.0.0'
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://storage.googleapis.com/download.flutter.io' }
+    }
+}
+
+rootProject.name = 'my_app'  // غيّر الاسم حسب اسم مشروعك
+include ':app'
